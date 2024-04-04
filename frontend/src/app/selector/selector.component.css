@@ -1,0 +1,17 @@
+p,
+label {
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+.selector {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #000000;
+}

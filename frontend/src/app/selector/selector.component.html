@@ -1,0 +1,17 @@
+<div class="selector">
+  <legend>Выбрать слой:</legend>
+
+  <div *ngFor="let v of variants">
+    <div>
+      <input
+        (change)="onSelected($event)"
+        type="radio"
+        id="{{ v.id }}"
+        name="layer"
+        value="{{ v.value }}"
+        checked="{{ v.id === 'A|B' }}"
+      />
+      <label for="{{ v.id }}">{{ v.name }}</label>
+    </div>
+  </div>
+</div>
